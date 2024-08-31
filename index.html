@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="./media/favicon.png" sizes="32x32">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Hompage - 8Bacus</title>
+</head>
+<body class="relative bg-black">
+    <div class="fixed z-50" style="left: -18.5625px; top: 30%;">
+        <div>
+            <a href="">
+                <div class="pl-[30px] py-[10px] pr-[10px] hover:bg-black/90 duration-300 hover:translate-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-gray-500" viewBox="0 0 512 512"><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+                </div>
+                <div class="pl-[30px] py-[10px] pr-[10px] hover:bg-black/90 duration-300 hover:translate-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-gray-500" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div class="pl-[30px] py-[10px] pr-[10px] hover:bg-black/90 duration-300 hover:translate-x-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-gray-500" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                </div>
+            </a>
+        </div>
+    </div>
+    <nav class="w-full bg-black px-5 xl:px-[110px] py-[20px] flex justify-between items-center h-[88px] md:h-[108px] lg:h-auto z-50 fixed top-0 left-0">
+        <div class="">
+            <img src="./media/logo.png" class="w-[120px] md:w-[150px] lg:w-[200px]" alt="">
+        </div>
+        <ul class="lg:flex justify-center items-center text-white uppercase text-[18px] leading-[27px] hidden" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            <a href="" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>home</li></a>
+            <a href="#services" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>services</li></a>
+            <a href="#about" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>about us</li></a>
+            <a href="#events" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>events</li></a>
+            <a href="#careers" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>careers</li></a>
+            <a href="#news" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>news</li></a>
+            <a href="/" class="px-[12px] py-5 hover:text-[#f37721] duration-300"><li>contact us</li></a>
+        </ul>
+        <div class="px-[15px] lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-5" id="burger" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+            </svg>
+        </div>
+    </nav>
+
+    <!-- sidebar -->
+    <div id="sidebar" class="w-full z-40 bg-black text-start md:w-[500px] h-screen lg:hidden transition-all duration-500 text-white fixed top-0 left-0 -translate-x-[100%] pt-[100px] sm:pl-0 sm:text-center pl-5 uppercase text-sm leading-[21px]">
+            <a href="" class="px-[15px] py-[8px] w-full block">home</a>
+            <a href="#services" class="px-[15px] py-[8px] w-full block">services</a>
+            <a href="#about" class="px-[15px] py-[8px] w-full block">about us</a>
+            <a href="#events" class="px-[15px] py-[8px] w-full block">events</a>
+            <a href="#careers" class="px-[15px] py-[8px] w-full block">careers</a>
+            <a href="#news" class="px-[15px] py-[8px] w-full block">news</a>
+            <a href="/" class="px-[15px] py-[8px] w-full block">contact us</a>
+    </div>
+
+    <!-- section 1 -->
+    <section class="mt-10 pt-10 lg:pt-16 overflow-hidden" id="home">
+        <div class="py-[50px] lg:py-0 px-5 background-1 overflow-hidden">
+            <div class="md:flex max-w-[1140px] mx-auto xl:pb-[250px] xl:pt-10">
+                <div class="py-[120px] md:pt-[10px] md:pb-[50px] lg:pt-[40px] xl:pb-[200px]  md:w-[334px] xl:w-[540px] px-[10px]">
+                    <h1 class="text-white text-[38px] font-semibold leding-[65px] md:text-[34px] md:leading-[44px] text-center second-font md:text-start xl:text-[70px] xl:leading-[80px]" data-aos="slide-down" data-aos-duration="1000">Transforming your business. <span>Be our partner.</span></h1>
+                    <div class="w-full flex justify-center my-5 md:justify-start" data-aos="slide-right" data-aos-duration="1000">
+                        <a href="/">
+                            <button class="second-font mx-auto text-[13px] py-5 px-[82px] xl:px-[98px] text-[#070707] bg-[#e9e9e9] hover:bg-[#f37721] hover:text-white duration-300 rounded-full leading-[13px] font-semibold">APPLY FOR A JOB</button>
+                        </a>
+                    </div>
+                    <div class="w-full flex justify-center my-5 md:justify-start" data-aos="slide-right" data-aos-duration="1000">
+                        <a href="/">
+                            <button class="second-font mx-auto text-[13px] leading-[22px] py-1 xl:py-2 px-[60px] xl:px-[75px] text-[#070707] bg-[#e9e9e9] hover:bg-[#f37721] hover:text-white duration-300 rounded-full font-semibold">REQUEST FOR <br> SERVICE CONSULTATION</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section id="services" class="overflow-hidden">
+        <div class="w-full bg-cover bg-center h-[140px] md:h-[145px] lg:h-[292px] xl:h-[332px] flex justify-center items-end pb-[30px] md:pb-10 lg:pb-[100px]" style="background-image: url(./media/flow-background-top.jpg);">
+            <h2 class="second-font text-[30px] font-semibold  lg:text-[52px] lg:leading-[52px]">What we <span>offer?</span></h2>
+        </div>
+        <div class="bg-white">
+            <div class="max-w-[1140px] px-[30px] md:px-0 mx-auto pb-[70px] pt-[10px] md:py-5 lg:py-[50px] grid grid-cols-1 md:grid-cols-3 gap-10">
+                <a href="">
+                    <div class="flex flex-wrap justify-center gap-y-5 hover:scale-110 duration-200 rounded-2xl border-2 border-transparent py-[10px] hover:opacity-70 hover:border-[#f4d926]">
+                        <div class="w-full flex justify-center px-[98px] md:px-[70px]">
+                            <img src="./media/recruitment.png" class=" w-full lg:w-[150px]" alt="">
+                        </div>
+                        <h3 class="second-font text-[18px] py-[10px] md:py-5 border-b border-black w-full text-center font-semibold 2xl:pt-10">RECRUITMENT</h3>
+                        <div class="md:h-[120px] lg:h-[105px]">
+                            <p class="second-font text-[13px] leading-[22px] mb-[21px] w-full px-5 text-center">Our team of recruitment offers recruitment services to help organizations find and hire the right talent.</p>
+                        </div>
+                        <button class="rounded-2xl md:rounded-full bg-[#f4d926] second-font text-[13px] py-3 px-6 font-semibold hover:bg-[#f37721] duration-300">Request for proposal</button>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex flex-wrap justify-center gap-y-5 hover:scale-110 duration-200 rounded-2xl border-2 border-transparent py-[10px] hover:opacity-70 hover:border-[#f4d926]">
+                        <div class="w-full flex justify-center px-[98px] md:px-[70px]">
+                            <img src="./media/administrative.png" class=" w-full lg:w-[150px]" alt="">
+                        </div>
+                        <h3 class="second-font text-[18px] py-[10px] md:py-5 border-b border-black w-full text-center font-semibold 2xl:pt-10">ADMINISTRATIVE</h3>
+                        <div class="md:h-[120px] lg:h-[105px]">
+                            <p class="second-font text-[13px] leading-[22px] mb-[21px] w-full px-5 text-center">Our team of administrative offers administrative support services that can significantly enhance the efficiency and productivity of the business of our clients.</p>
+                        </div>
+                        <button class="rounded-2xl md:rounded-full bg-[#f4d926] second-font text-[13px] py-3 px-6 font-semibold hover:bg-[#f37721] duration-300">Request for proposal</button>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex flex-wrap justify-center gap-y-5 hover:scale-110 duration-200 rounded-2xl border-2 border-transparent py-[10px] hover:opacity-70 hover:border-[#f4d926]">
+                        <div class="w-full flex justify-center px-[98px] md:px-[70px]">
+                            <img src="./media/imigratif.png" class=" w-full lg:w-[150px]" alt="">
+                        </div>
+                        <h3 class="second-font text-[18px] py-[10px] md:py-5 border-b border-black w-full text-center font-semibold 2xl:pt-10">IMMIGRATION</h3>
+                        <div class="md:h-[120px] lg:h-[105px]">
+                            <p class="second-font text-[13px] leading-[22px] mb-[21px] w-full px-5 text-center">We offers comprehensive visa and work permit application services designed to streamline and simplify the process for an organization.</p>
+                        </div>
+                        <button class="rounded-2xl md:rounded-full bg-[#f4d926] second-font text-[13px] py-3 px-6 font-semibold hover:bg-[#f37721] duration-300">Request for proposal</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="w-full bg-white overflow-hidden" id="about">
+        <div class="bg-white flex justify-centers">
+            <img src="./media/background-2.png" class="w-full" alt="">
+        </div>
+        <div class="max-w-[1140px] mx-auto">
+            <div class="md:pt-[70px] lg:pt-[100px] xl:pt-[50px] pb-[100px] md:pb-[150px] px-[10px] md:flex justify-center items-center ">
+                <div class="md:w-1/2 p-[10px]" data-aos="slide-right" data-aos-duration="1000">
+                    <img src="./media/about.jpg" alt="">
+                </div>
+                <div class="md:w-1/2 pt-10 md:pt-0 lg:pl-[35px]" data-aos="slide-left" data-aos-duration="1000">
+                    <h2 class="second-font text-[100px] leading-[55px] lg:text-[155px] lg:leading-[70px] 2xl:leading-[100px] text-center font-semibold 2xl:pt-14">About <br><span class="ml-10 md:ml-16">Us</span></h2>
+                    <p class="text-center leading-[22px] text-[13px] second-font mt-20 md:mt-10 lg:mt-20 xl:mt-10">We understand that success in today’s dynamic business environment requires the right talent, seamless administrative support, and expert visa services. As your dedicated partner, we bring unparalleled expertise to streamline your operations and empower your growth journey.</p>
+                </div>
+            </div>
+            <div class="md:grid grid-cols-3 items-center h-[138px] px-[10px] md:px-0">
+                <div class="border-b-[3px] border-[#f37721]">
+                </div>
+                <div class="py-14 md:py-0">
+                    <h2 class="text-[18px] lg:text-[28px] second-font font-semibold text-center">What Sets Us Apart?</h2>
+                </div>
+                <div class="border-b-[3px] border-[#f37721]">
+                </div>
+            </div>
+            <div class=" md:flex justify-center items-center gap-x-5 px-[10px] lg:px-5 md:py-[10px] lg:py-5 pt-16">
+                <div class="md:w-1/3 flex flex-wrap gap-y-5 pb-5 md:pb-0">
+                    <div class=" flex justify-center w-full px-[100px] md:px-[70px] lg:py-0">
+                        <img src="./media/industry.png" class="w-full lg:w-[180px]" alt="">
+                    </div>
+                    <div class="w-full">
+                        <h3 class="second-font text-[18px] leading-[18px] text-center font-semibold pb-[10px] md:pb-0 pt-[10px] lg:pt-[50px]"><span>Industry Expertise</span></h3>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-center second-font text-[13px] leading-[22px] px-[10px] lg:px-5 mb-4">Benefit from our in-depth knowledge of diverse industries. We tailor our services to meet the specific demands of your sector, ensuring a customized and effective approach.</p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-wrap gap-y-5 pb-5 md:pb-0">
+                    <div class=" flex justify-center w-full px-[100px] md:px-[70px] lg:py-0">
+                        <img src="./media/client.png" class="w-full lg:w-[180px]" alt="">
+                    </div>
+                    <div class="w-full">
+                        <h3 class="second-font text-[18px] leading-[18px] text-center font-semibold pb-[10px] md:pb-0 pt-[10px] lg:pt-[50px]"><span>Client-Centric Approach</span></h3>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-center second-font text-[13px] leading-[22px] px-[10px] lg:px-5 mb-4">Your goals are our goals. We take the time to understand your objectives, tailoring our services to align with your vision. Your success story is at the heart of everything we do.</p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-wrap gap-y-5 pb-5 md:pb-0">
+                    <div class=" flex justify-center w-full px-[100px] md:px-[70px] lg:py-0">
+                        <img src="./media/technology.png" class="w-full lg:w-[180px]" alt="">
+                    </div>
+                    <div class="w-full">
+                        <h3 class="second-font text-[18px] leading-[18px] text-center font-semibold pb-[10px] md:pb-0 pt-[10px] lg:pt-[50px]"><span>Technology-Driven Approach</span></h3>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-center second-font text-[13px] leading-[22px] px-[10px] lg:px-5 mb-4">Embrace innovation with our technology-driven solutions. We leverage cutting-edge tools to enhance efficiency and provide you with a competitive edge.</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" md:flex justify-center items-center gap-x-5 px-[10px] lg:px-5 py-[10px]">
+                <div class="md:w-1/3 flex flex-wrap gap-y-5 pb-5 md:pb-0">
+                    <div class=" flex justify-center w-full px-[100px] md:px-[70px] lg:py-0">
+                        <img src="./media/transparent.png" class="w-full lg:w-[180px]" alt="">
+                    </div>
+                    <div class="w-full">
+                        <h3 class="second-font text-[18px] leading-[18px] text-center font-semibold pb-[10px] md:pb-0 pt-[10px] lg:pt-[50px]"><span>Transparent Processes</span></h3>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-center second-font text-[13px] leading-[22px] px-[10px] lg:px-5 mb-4">Trust is paramount. We maintain transparency in our processes, keeping you informed every step of the way. Your peace of mind is our priority.</p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex flex-wrap gap-y-5 pb-5 md:pb-0">
+                    <div class=" flex justify-center w-full px-[100px] md:px-[70px] lg:py-0">
+                        <img src="./media/tailored.png" class="w-full lg:w-[180px]" alt="">
+                    </div>
+                    <div class="w-full">
+                        <h3 class="second-font text-[18px] leading-[18px] text-center font-semibold pb-[10px] md:pb-0 pt-[10px] lg:pt-[50px]"><span>Tailored Solutions</span></h3>
+                    </div>
+                    <div class="w-full">
+                        <p class="text-center second-font text-[13px] leading-[22px] px-[10px] lg:px-5 mb-4">One size does not fit all. Our solutions are customized to meet the unique needs of your business. Your success story is our top priority.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:pt-[100px] md:pt-[70px] pt-[60px] gap-x-5 md:flex justify-between px-[10px] md:px-[20px]">
+                <h2 class="md:hidden second-font text-[28px] leading-[48px] text-center pb-[90px]">Unlock Your Business Potential with <span> 8Bacus Corp. </span>Your Complete Solutions Partner! </h2>
+                <div class="md:w-[77%] second-font pb-[100px]">
+                    <div class="md:w-[71%]" data-aos="slide-right" data-aos-duration="1000">
+                        <h2 class="lg:pt-10 mb-5 font-semibold text-[18px] leading-[18px]">Strategic Recruitment</h2>
+                        <p class="text-[13px] leading-[22px] pb-4">Elevate your workforce with our strategic recruitment solutions. We go beyond just filling positions – we find the perfect match for your company culture and objectives, ensuring long-term success.</p>
+                    </div>
+                    <div class="md:w-[71%] md:ml-[150px] pt-10" data-aos="slide-right" data-aos-duration="1200">
+                        <h2 class="pt-10 mb-5 font-semibold text-[18px] leading-[18px]">Effortless Administration</h2>
+                        <p class="text-[13px] leading-[22px] pb-4">Say goodbye to administrative hassles. Our comprehensive admin services cover everything from documentation management to HR support, allowing you to focus on your core business functions.</p>
+                    </div>
+                    <div class="md:w-[71%] md:ml-[250px] pt-10" data-aos="slide-right" data-aos-duration="1400">
+                        <h2 class="pt-10 mb-5 font-semibold text-[18px] leading-[18px]">Visa Expertise</h2>
+                        <p class="text-[13px] leading-[22px] pb-4">Navigating visa processes can be a labyrinth. Let our visa experts guide you through the complexities, offering reliable and timely services for individuals and businesses alike.</p>
+                    </div>
+                </div>
+                <div class="w-[22.3%] p-[10px]">
+                    <div class="pt-10 hidden lg:block">
+                        <h2 class="second-font text-[28px] leading-[46px] text-end">Unlock Your <br>
+                            Business <br>
+                            Potential with <br>
+                            <span class="font-semibold"> 8Bacus Corp. <br> </span>
+                            Your <br>
+                            Complete <br>
+                            Solutions <br>
+                            Partner! <br>
+                            </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex flex-wrap justify-center bg-black second-font">
+            <img src="./media/background-3.png" class="-mt-1 w-full" alt="">
+            <div class="max-w-[1140px] w-full pb-[70px] lg:pb-[100px] px-5">
+                <h2 class="text-[30px] leading-[30px] lg:text-[52px] lg:leading-[52px] pb-10 pt-[30px] lg:pt-[70px] font-semibold text-center"><span>Industries We Serve</span></h2>
+                <div class="md:flex justify-center gap-5 px-10 md:px-0 md:py-[10px]">
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/tech.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Technology</p>
+                    </div>
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/service.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Service Type</p>
+                    </div>
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/healthcare.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Healthcare</p>
+                    </div>
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/banking.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Banking & Infrastracture</p>
+                    </div>
+                </div>
+                <div class="md:flex justify-center gap-5 px-10 md:px-0 md:pt-[30px] md:pb-[10px]">
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/financial.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Financial Technology</p>
+                    </div>
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/retail.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Retail</p>
+                    </div>
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/ecommerce.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">E-Commerce</p>
+                    </div>
+                    <div class="md:w-1/4 pt-[18px] pb-6 bg-white rounded-[20px] flex justify-center flex-wrap gap-y-5 mb-[10px] md:mb-0" >
+                        <div class="w-full flex justify-center px-20 md:px-0">
+                            <img src="./media/manufacture.png" class="w-full md:w-[67px] lg:w-[105px]" alt="">
+                        </div>
+                        <p class="text-[18px] text-center font-semibold leading-[18px] lg:pt-10">Manufacturing & Others</p>
+                    </div>
+                </div>
+                <p class="text-[13px] leading-[22px] text-white py-[10px] mb-4">Your concerns are our priority. We proactively collaborate with you to understand your challenges and goals, ensuring that our services are perfectly aligned with your vision for success. We pride ourselves on being responsive and attentive partners, ready to address your needs and provide timely solutions.</p>
+            </div>
+            <img src="./media/bakcground-4.png" class="-mb-1 w-full" alt="">
+        </div>
+        <div class="max-w-[1140px] py-[70px] lg:py-[100px] mx-auto">
+            <h2 class="second-font font-semibold text-[30px] leading-[30px] lg:text-[52px] lg:leading-[52px] pt-[10px] lg:pt-[50px] pb-10 text-center mb-5">Our Partners</h2>
+            <div class="flex justify-center items-center">
+                <svg data-id="prevPartner" class="w-[32px] cursor-pointer fill-[#F37721]" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path>
+                </svg>
+                <div id="partner-carousel" class="w-[300px] md:w-[590px]">
+                    <img src="./media/partner-1.png" alt="">
+                    <img src="./media/partner-2.png" alt="">
+                    <img src="./media/partner-3.png" alt="">
+                    <img src="./media/partner-4.png" alt="">
+                </div>
+                <svg data-id="nextPartner" class="w-[32px] cursor-pointer fill-[#F37721]" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path>
+                </svg>
+            </div>
+        </div>
+        <img src="./media/background-5.png" class="w-full" alt="">
+    </section>
+    <section class="py-[70px] lg:py-[100px] second-font bg-white overflow-hidden" id="events">
+        <div class="max-w-[1140px] mx-auto w-full">
+            <h2 class="mt-10 text-[30px] leading-[30px] lg:text-[52px] lg:leading-[52px] font-semibold text-center pb-[60px]">Company Events</h2>
+            <div class="flex justify-center gap-[15px] flex-wrap px-5 md:px-[15px] xl:px-0" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="./media/event-1.jpg" class="w-full md:w-[31%]" alt="">
+                <img src="./media/event-2.jpg" class="w-full md:w-[31%]" alt="">
+                <img src="./media/event-3.jpg" class="w-full md:w-[31%]" alt="">
+                <img src="./media/event-4.jpg" class="w-full md:w-[31%]" alt="">
+                <img src="./media/event-5.jpg" class="w-full md:w-[31%]" alt="">
+                <img src="./media/event-6.jpg" class="w-full md:w-[31%]" alt="">
+                <div id="hide-event" class="w-full flex justify-center gap-[15px] flex-wrap hidden">
+                    <img src="./media/event-7.jpg" class="w-full md:w-[31%]" alt="">
+                    <img src="./media/event-8.jpg" class="w-full md:w-[31%]" alt="">
+                    <img src="./media/event-9.jpg" class="w-full md:w-[31%]" alt="">
+                </div>
+            </div>
+            <div class="w-full flex justify-center pt-[90px]">
+                <button id="toggle-button" class="bg-[#f4d926] hover:bg-[#f37721] text-black hover:text-white duration-300 px-[30px] py-[15px] leading-[24pxs] rounded-full font-medium">Load more</button>
+            </div>
+        </div>
+    </section>
+    <div class="bg-white w-full">
+        <img src="./media/background-6.png" class="w-full" alt="">
+    </div>
+    <section class="pt-20 bg-white overflow-hidden" id="careers">
+        <div class="max-w-[1140px] mx-auto">
+            <h2 class="pt-20 pb-10 second-font text-[30px] leading-[30px] lg:text-[46px] lg:leading-[46px] font-semibold text-center">
+                Careers
+            </h2>
+            <div class="md:flex justify-center items-center gap-5 pb-[70px] lg:pb-[100px]" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <div class="md:w-1/3 px-[15px]">
+                    <button class="flex justify-between items-center text-start text-[#212519] text-[18px] leading-[27px] font-semibold px-5 py-[10px] w-full bg-[#F9A438] hover:bg-[#f37721] duration-300 rounded-2xl" data-aos="fade-right" data-aos-duration="600">
+                        <p class="pr-[15px]">Front-End Developers</p>
+                        <img src="./media/arrow.png" class="ml-[15px] w-[18px] lg:w-6" alt="">
+                    </button>
+                    <button class="flex justify-between items-center text-start text-[#212519] text-[18px] leading-[27px] font-semibold px-5 py-[10px] w-full bg-[#F9A438] hover:bg-[#f37721] duration-300 rounded-2xl mt-5" data-aos="fade-right" data-aos-duration="800">
+                        <p class="pr-[15px]">Sale Support Specialist</p>
+                        <img src="./media/arrow.png" class="ml-[15px] w-[18px] lg:w-6" alt="">
+                    </button>
+                </div>
+                <div class="md:w-1/3 px-[15px] pt-5 md:pt-0">
+                    <button class="flex justify-between items-center text-start text-[#212519] text-[18px] leading-[27px] font-semibold px-5 py-[10px] w-full bg-[#F9A438] hover:bg-[#f37721] duration-300 rounded-2xl" data-aos="fade-right" data-aos-duration="600">
+                        <p class="pr-[15px]">Back-End Developers</p>
+                        <img src="./media/arrow.png" class="ml-[15px] w-[18px] lg:w-6" alt="">
+                    </button>
+                    <button class="flex justify-between items-center text-start text-[#212519] text-[18px] leading-[27px] font-semibold px-5 py-[10px] w-full bg-[#F9A438] hover:bg-[#f37721] duration-300 rounded-2xl mt-5" data-aos="fade-right" data-aos-duration="800">
+                        <p class="pr-[15px]">E-Commerce Marketer</p>
+                        <img src="./media/arrow.png" class="ml-[15px] w-[18px] lg:w-6" alt="">
+                    </button>
+                </div>
+                <div class="md:w-1/3 px-[15px] pt-5 md:pt-0">
+                    <button class="flex justify-between items-center text-start text-[#212519] text-[18px] leading-[27px] font-semibold px-5 py-[10px] w-full bg-[#F9A438] hover:bg-[#f37721] duration-300 rounded-2xl" data-aos="fade-right" data-aos-duration="600">
+                        <p class="pr-[15px]">UI/UX Designer</p>
+                        <img src="./media/arrow.png" class="ml-[15px] w-[18px] lg:w-6" alt="">
+                    </button>
+                    <button class="flex justify-between items-center text-start text-[#212519] text-[18px] leading-[27px] font-semibold px-5 py-[10px] w-full bg-[#F9A438] hover:bg-[#f37721] duration-300 rounded-2xl mt-5" data-aos="fade-right" data-aos-duration="800">
+                        <p class="pr-[15px]">Key Accounts Manager</p>
+                        <img src="./media/arrow.png" class="ml-[15px] w-[18px] lg:w-6" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <img src="./media/background-7.png" class="w-full" alt="">
+        <div class="max-w-[1140px] mx-auto pb-[100px] md:py-[80px] lg:py-[110px] md:flex justify-center items-center px-[20px]">
+            <img src="./media/career.jpg" class="md:w-1/2 lg:w-[550px]" alt="" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="second-font md:pl-[45px] text-center md:text-start pt-[25px] md:pt-0" data-aos="slide-left" data-aos-duration="1000">
+                <h2 class="font-semibold text-[28px] leading-[28px] text-[#f4d926]">Why Should You Choose Us?</h2>
+                <p class="text-[13px] leading-[22px] py-[20px]">Welcome to <b>8Bacus Corp.</b>, where excellence meets innovation. We pride ourselves on being the driving force behind your business success by providing unmatched recruitment, admin, and visa services. Choose us for a seamless journey toward growth and efficiency.</p>
+                <button class="bg-[#f4d926] hover:bg-[#F37721] duration-300 font-medium text-[13px] leading-[13px] px-[70px] py-[15px] rounded-full">LEARN MORE</button>
+            </div>
+        </div>
+        <img src="./media/background-8.png" class="w-full" alt="">
+    </section>
+    
+    <section class="pt-[90px] pb-[80px] lg:pb-[100px] w-full bg-white overflow-hidden" id="news">
+        <div class="max-w-[1140px] mx-auto second-font">
+            <h2 class="font-semibold pt-[50px] pb-10 mb-5 text-center text-[30px] leading-[30px] lg:text-[52px] lg:leading-[52px]">News</h2>
+            <div class="flex justify-center items-center flex-wrap gap-5 px-5 md:px-0">
+                <div class="w-full md:w-[47%] xl:w-[23%] bg-white h-full" style="border: 1px solid rgba(0, 0, 0, .1);">
+                    <a href="">
+                        <div class="overflow-hidden relative">
+                            <div class="opacity-0 hover:opacity-80 duration-300 flex items-center justify-center absolute w-full h-full top-0 left-0 z-10" style="background: rgba(0,0,0, .75);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-white" viewBox="0 0 512 512"><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+                            </div>
+                            <div class="" style="padding-bottom: calc(0.64* 100%);">
+                                <img src="./media/news-1.jpg" class="w-full h-2/3 max-w-[900px] object-cover absolute" style="top: calc(50% + 1px); left: calc(50% + 1px); transform: scale(1.01) translate(-50%, -50%);" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-[15px]">
+                        <a href="">
+                            <h3 class="font-semibold text-[19px] leading-[23px] hover:text-[#23527c] duration-300 mt-[10px] mb-[5px] min-h-[92px]">Tech Talent Has Growing Expectations: Will Employers Rise to the Challenge?</h3>
+                        </a>
+                        <p class="text-[#212529] text-[13px] leading-[22px] min-h-20">What happens when tech talent teams, used to analyzing data...</p>
+                        <a href="" class="text-[#353ef0] text-xs leading-[18px] font-medium" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Read More</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-[47%] xl:w-[23%] bg-white h-full" style="border: 1px solid rgba(0, 0, 0, .1);">
+                    <a href="">
+                        <div class="overflow-hidden relative">
+                            <div class="opacity-0 hover:opacity-80 duration-300 flex items-center justify-center absolute w-full h-full top-0 left-0 z-10" style="background: rgba(0,0,0, .75);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-white" viewBox="0 0 512 512"><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+                            </div>
+                            <div class="" style="padding-bottom: calc(0.64* 100%);">
+                                <img src="./media/news-2.jpg" class="w-full h-2/3 max-w-[900px] object-cover absolute" style="top: calc(50% + 1px); left: calc(50% + 1px); transform: scale(1.01) translate(-50%, -50%);" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-[15px]">
+                        <a href="">
+                            <h3 class="font-semibold text-[19px] leading-[23px] hover:text-[#23527c] duration-300 mt-[10px] mb-[5px] min-h-[92px]">10 Communication Strategies to Better Engage Candidates</h3>
+                        </a>
+                        <p class="text-[#212529] text-[13px] leading-[22px] min-h-20">Engaging candidates effectively is crucial in today’s competitive recruitment landscape,...</p>
+                        <a href="" class="text-[#353ef0] text-xs leading-[18px] font-medium" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Read More</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-[47%] xl:w-[23%] bg-white h-full" style="border: 1px solid rgba(0, 0, 0, .1);">
+                    <a href="">
+                        <div class="overflow-hidden relative">
+                            <div class="opacity-0 hover:opacity-80 duration-300 flex items-center justify-center absolute w-full h-full top-0 left-0 z-10" style="background: rgba(0,0,0, .75);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-white" viewBox="0 0 512 512"><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+                            </div>
+                            <div class="" style="padding-bottom: calc(0.64* 100%);">
+                                <img src="./media/news-3.jpg" class="w-full h-2/3 max-w-[900px] object-cover absolute" style="top: calc(50% + 1px); left: calc(50% + 1px); transform: scale(1.01) translate(-50%, -50%);" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-[15px]">
+                        <a href="">
+                            <h3 class="font-semibold text-[19px] leading-[23px] hover:text-[#23527c] duration-300 mt-[10px] mb-[5px] min-h-[92px]">The Impact of Bad Hires and How to Prevent Them</h3>
+                        </a>
+                        <p class="text-[#212529] text-[13px] leading-[22px] min-h-20">While finding the right person to join an organization is...</p>
+                        <a href="" class="text-[#353ef0] text-xs leading-[18px] font-medium" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Read More</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-[47%] xl:w-[23%] bg-white h-full" style="border: 1px solid rgba(0, 0, 0, .1);">
+                    <a href="">
+                        <div class="overflow-hidden relative">
+                            <div class="opacity-0 hover:opacity-80 duration-300 flex items-center justify-center absolute w-full h-full top-0 left-0 z-10" style="background: rgba(0,0,0, .75);">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-white" viewBox="0 0 512 512"><path d="M334.5 414c8.8 3.8 19 2 26-4.6l144-136c4.8-4.5 7.5-10.8 7.5-17.4s-2.7-12.9-7.5-17.4l-144-136c-7-6.6-17.2-8.4-26-4.6s-14.5 12.5-14.5 22l0 72L32 192c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l288 0 0 72c0 9.6 5.7 18.2 14.5 22z"/></svg>
+                            </div>
+                            <div class="" style="padding-bottom: calc(0.64* 100%);">
+                                <img src="./media/news-4.jpg" class="w-full h-2/3 max-w-[900px] object-cover absolute" style="top: calc(50% + 1px); left: calc(50% + 1px); transform: scale(1.01) translate(-50%, -50%);" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="p-[15px]">
+                        <a href="">
+                            <h3 class="font-semibold text-[19px] leading-[23px] hover:text-[#23527c] duration-300 mt-[10px] mb-[5px] min-h-[92px]">Empowering Candidates to Shape Their Recruitment Journey</h3>
+                        </a>
+                        <p class="text-[#212529] text-[13px] leading-[22px] min-h-20">In the quest to create a more engaging recruitment process,...</p>
+                        <a href="" class="text-[#353ef0] text-xs leading-[18px] font-medium" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="overflow-hidden">
+        <img src="./media/background-9.png" class="-mt-1 w-full" alt="">
+        <div class="max-w-[1140px] mx-auto pb-[30px] px-[10px]">
+            <div class="md:flex justify-center items-end gap-5 pt-[70px] lg:pt-0">
+                <p class="second-font text-white text-[30px] leading-[30px] lg:text-[46px] lg:leading-[46px] text-center md:text-start font-semibold">Connect with</p>
+                <div class="flex justify-center clear-start mt-10 md:mt-0">
+                    <img src="./media/logo.png" class="w-[91px] md:w-[192px] lg:w-[285px]" alt="">
+                </div>
+            </div>
+            <div class="lg:pt-[70px] pt-5 md:pt-10 pb-10">
+                <p class="second-font text-[13px] md:leading-[38px] text-white text-center">We are your dedicated partner on the path to success.</p>
+            </div>
+            <iframe class="w-full h-[304px] md:h-[560px] lg:h-[600px]" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1930.8562713776294!2d121.019265!3d14.558424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c94ae4f2887d%3A0x4f8768415d368f09!2sPBCom%20Tower!5e0!3m2!1sen!2sid!4v1725094930019!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+    <footer class="w-full bg-white text-[#212529] text-center md:text-start" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <div class="md:flex justify-center py-[70px] px-[50px] max-w-[1140px] mx-auto gap-[30px]">
+            <div class="md:w-1/3">
+                <div class="flex justify-center md:justify-start">
+                    <a href="">
+                        <img src="./media/logo.png" class="w-[195px] md:w-[115px] lg:w-[200px] pb-5" alt="">
+                    </a>
+                </div>
+                <p class="text-[13px] leading-[20px] md:pr-20 font-semibold">We go beyond services; we provide solutions that empower your business to thrive.</p>
+                <div class="pt-[10px]">
+                    <p class="font-bold text-[13px] leading-[20px]">Company landline number:</p>
+                    <p class="font-semibold text-[13px] leading-[20px]">02-53104708</p>
+                </div>
+            </div>
+            <div class="md:w-1/4 mt-[30px] md:mt-0">
+                <p class="pb-[10px] font-bold text-[18px] leding-[27px]">Our Services</p>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Recruitment</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Payroll Service</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Administrative Support</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Immigration / Visa Processing</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Business Registration</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Accounting & Taxation</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Business Consultancy</a>
+                </div>
+            </div>
+            <div class="md:w-1/4 mt-[30px] md:mt-0">
+                <p class="pb-[10px] font-bold text-[18px] leding-[27px]">Legal</p>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Privacy Policy</a>
+                </div>
+                <div class="leading-[24px]">
+                    <a href="" class="text-[13px] hover:opacity-50 duration-200">Terms and Conditions</a>
+                </div>
+            </div>
+            <div class="md:w-[16.6%] flex justify-center gap-1 md:block mt-[30px] md:mt-0">
+                <div class="md:w-full flex justify-center pb-[10px]">
+                    <a href=""><img src="./media/facebook.png" class="w-[50px] md:w-[27px]" alt=""></a>
+                </div>
+                <div class="md:w-full flex justify-center pb-[10px]">
+                    <a href=""><img src="./media/instagram.png" class="w-[50px] md:w-[27px]" alt=""></a>
+                </div>
+                <div class="md:w-full flex justify-center pb-[10px]">
+                    <a href=""><img src="./media/linkedin.png" class="w-[50px] md:w-[27px]" alt=""></a>
+                </div>
+                <div class="md:w-full flex justify-center pb-[10px]">
+                    <a href=""><img src="./media/tiktok.png" class="w-[50px] md:w-[27px]" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-[#F9A438] flex justify-center pt-[10px] pb-[30px] 2xl:pt-[50px] mb-[30px]">
+            <p class="second-font leading-[13px] text-[13px] font-semibold">©8Bacus Corporation 2024, All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('toggle-button').addEventListener('click', function() {
+            const hideEvent = document.getElementById('hide-event');
+            const button = this;
+        
+            if (hideEvent.classList.contains('hidden')) {
+                hideEvent.classList.remove('hidden');
+                hideEvent.style.display = 'none';
+                $(hideEvent).slideDown(300);
+                button.textContent = 'Hide';
+            } else {
+                $(hideEvent).slideUp(300, function() {
+                    hideEvent.classList.add('hidden');
+                });
+                button.textContent = 'Load more';
+            }
+        });
+        </script>
+<style>
+    .first-font {
+        font-family: "Nunito", sans-serif;
+    }
+    .second-font {
+        font-family: "Roboto", sans-serif;
+    }
+    span{
+        color: #f37721;
+    }
+    .container{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .background-1{
+        background: url(./media/background-1.gif) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #services{
+        scroll-margin-top: 80px;
+    }
+    @media screen and (min-width: 768px) {
+        .background-1{
+            background-size: 70% auto;
+            background-position: center right;
+        }
+    }
+    @media screen and (min-width: 1023px) {
+        .background-1{
+            background-size: 70% auto;
+            background-position: top right;
+        }
+        #services{
+        scroll-margin-top: 0;
+    }
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+        $('#partner-carousel').slick({
+            dots: false,
+            prevArrow: $('[data-id="prevPartner"]'),
+            nextArrow: $('[data-id="nextPartner"]'),
+        });
+</script>
+<script>
+    document.querySelector('#burger').addEventListener('click', () => {
+        document.querySelector('#sidebar').classList.toggle('-translate-x-[100%]')
+    })
+    document.querySelectorAll('#sidebar a').forEach(link => {
+    link.addEventListener('click', function() {
+        document.getElementById('sidebar').classList.add('-translate-x-[100%]');
+    });
+});
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
